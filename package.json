@@ -1,0 +1,55 @@
+{
+  "name": "winston-logs",
+  "homepage": "https://github.com/pomeo/winston-logs#readme",
+  "version": "1.0.0",
+  "description": "Aggregation of winston transports",
+  "keywords": [
+    "winston",
+    "log",
+    "logs",
+    "logentries"
+  ],
+  "author": "Sergey Ovechkin <me@pomeo.me>",
+  "engines": {
+    "node": ">=4.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pomeo/winston-logs.git"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "main": "./lib/index",
+  "scripts": {
+    "test": "xo && make test-once"
+  },
+  "bugs": {
+    "url": "https://github.com/pomeo/winston-logs/issues"
+  },
+  "xo": {
+    "esnext": true,
+    "space": true,
+    "rules": {
+      "space-before-function-paren": 0,
+      "curly": 0
+    },
+    "envs": [
+      "node",
+      "mocha"
+    ]
+  },
+  "devDependencies": {
+    "babel": "^6.0.15",
+    "coveralls": "^2.11.4",
+    "istanbul": "^0.4.0",
+    "mocha": "^2.3.3",
+    "xo": "^0.10.1"
+  },
+  "dependencies": {
+    "le_node": "^1.1.1",
+    "winston": "^2.1.0"
+  }
+}
